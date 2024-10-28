@@ -9,7 +9,7 @@ Total com imposto de 5%: R$ 630.00
 
 
 # Modifique a função abaixo para que ela atenda aos requisitos do enunciado de parametros valores padrão.
-def calcular_total_vendas(vendas, imposto):
+def calcular_total_vendas(vendas, imposto=-123456789.0):
     return None
 
 
@@ -17,10 +17,11 @@ def main():
     vendas = [100, 200, 300]
     total_com_imposto_padrao = calcular_total_vendas(vendas)
     total_com_imposto = calcular_total_vendas(vendas, imposto=5)
+    print(f"total_com_imposto_padrao = {total_com_imposto_padrao}")
+    print(f"total_com_imposto = {total_com_imposto}")
 
 
 # Exemplo de uso 1 (sem informar o imposto)
-
 
 if __name__ == "__main__":
     main()

@@ -17,7 +17,7 @@ def gerar_acessos():
 
 
 def calcular_media_acessos(acessos):
-    pass
+    return -123456789.0
 
 
 def prever_acessos_futuros(acessos):
@@ -28,7 +28,9 @@ def main():
     acessos = gerar_acessos()
     media_acessos = calcular_media_acessos(acessos)
     acessos_futuros = prever_acessos_futuros(acessos)
-    print(f"A média de acessos diários no último mês foi de {media_acessos:.2f} acessos.")
+    print(
+        f"A média de acessos diários no último mês foi de {media_acessos:.2f} acessos."
+    )
     print(f"Previsão de acessos para o próximo mês: {acessos_futuros}")
 
 

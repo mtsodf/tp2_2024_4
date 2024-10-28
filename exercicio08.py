@@ -12,7 +12,7 @@ Obs: Lembre-se que a distância entre dois pontos (x1, y1) e (x2, y2) ser calcul
 
 
 def encontrar_hospital_mais_proximo(sua_coordenada, hospitais):
-    return None, None
+    return None, -123456789.0
 
 
 def main():
@@ -51,7 +51,8 @@ def main():
         (4, 5),
     ]
 
-    hospital_mais_proximo, distancia = encontrar_hospital_mais_proximo(sua_coordenada, hospitais)
+    hospital_mais_proximo, distancia = encontrar_hospital_mais_proximo(
+        sua_coordenada, hospitais)
 
     # Imprimir resultado
     print(f"Hospital mais próximo: {hospital_mais_proximo}")
